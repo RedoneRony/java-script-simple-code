@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="secret">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, ullam?
+    </p>
+    <input id="delete-confirm" type="text" placeholder="please type delete">
+    <button id="delete-button" disabled>Delete </button>
+
+    <script>
+        // delete element
+        document.getElementById('delete-button').addEventListener('click',function(){
+
+            document.getElementById('secret').style.display='none';
+
+        })
+
+        //   focus
+         document.getElementById('delete-confirm').addEventListener('focus', function () {
+
+                document.body.style.backgroundColor = 'lightcoral';
+
+            })
+
+            // blur
+
+            document.getElementById('delete-confirm').addEventListener('blur', function () {
+
+                    document.body.style.backgroundColor = 'white';
+
+                })
+
+            // keyup
+
+
+    document.getElementById('delete-confirm').addEventListener('keyup', function (event) {
+
+        // const deletefield = document.getElementById('delete-confirm');
+        // console.log(deletefield.value);
+
+        // document.body.style.backgroundColor = 'white';
+        const deleteBtn = document.getElementById('delete-button');
+        if(event.target.value == 'delete') {
+            deleteBtn.removeAttribute('disabled');
+
+        }
+        else{
+            deleteBtn.setAttribute('disabled', true);
+        }
+
+    })
+    </script>
+</body>
+</html>

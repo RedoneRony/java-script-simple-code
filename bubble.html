@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <h4>bubble vai list </h4> 
+    <ul id="list-container">
+        <li class="item">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae quibusdam architecto odit, hic accusamus consequatur. Expedita sint blanditiis obcaecati inventore pariatur! Harum labore ipsam commodi est cupiditate ut minima!</div>
+            <div>Sed, amet perspiciatis consequuntur aliquid recusandae cupiditate, velit rem iste esse ipsum doloribus. Atque, sed amet vitae eveniet labore, quos iusto harum neque aut reprehenderit quae error nisi illo vel?</div>
+        </li>
+        <li id="second-item" class="item">
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore facere cumque laborum, incidunt molestiae voluptate a unde ratione earum, nobis inventore amet deleniti fugit asperiores quisquam illum beatae accusantium est.</div>
+            <div>Quae pariatur aliquam aspernatur odio quaerat reiciendis, soluta ipsum fuga explicabo fugit quidem ducimus delectus deserunt itaque sunt optio, esse consequuntur veritatis similique natus amet impedit quod. Expedita, doloremque perferendis?</div>
+        </li>
+        <li class="item">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero beatae aspernatur facilis excepturi harum ipsum eligendi eaque quibusdam adipisci? Laudantium impedit ratione velit porro reprehenderit voluptatem perferendis obcaecati accusamus.</div>
+            <div>Itaque sequi nobis, deleniti laudantium illum, eligendi modi enim ea quisquam ad asperiores perspiciatis! Nisi optio possimus, illo, ipsam alias dolor sequi dolorum numquam eligendi qui doloribus rem aut consequatur!</div>
+        </li>
+        <li class="item">
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ipsam, officiis distinctio quo repellat veniam illum velit suscipit veritatis harum voluptatem atque enim, quidem recusandae nam consequatur tempore a quaerat.</div>
+            <div>Saepe harum aliquam mollitia voluptatum asperiores. Ipsam tempore reiciendis sunt saepe perferendis non praesentium dicta quibusdam. Mollitia beatae quasi at pariatur quo distinctio saepe sapiente, aspernatur dicta quae hic harum!</div>
+        </li>
+        <li class="item">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laboriosam nisi deleniti iusto nobis dicta, esse voluptatem impedit quod? Esse praesentium molestias ex harum excepturi nihil culpa in doloribus commodi.</div>
+            <div>Sapiente, dignissimos. Nobis consectetur perferendis, impedit voluptate officia ab suscipit autem voluptates exercitationem incidunt corporis et dignissimos reiciendis, eveniet dolorem asperiores nihil sequi consequuntur blanditiis adipisci eius vel deleniti? Perspiciatis.</div>
+        </li>
+        <li class="item">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam reiciendis quis omnis molestias voluptate reprehenderit impedit fugit quasi ipsam! Culpa assumenda natus veniam porro alias ullam, nisi voluptatibus consequatur.</div>
+            <div>Accusamus maiores, mollitia cupiditate non fugit, exercitationem iste autem animi velit, nobis maxime commodi quod. Consequuntur error blanditiis sit, hic, temporibus, officia nulla voluptates quidem vel impedit accusantium saepe! Aliquam.</div>
+        </li>
+    </ul>
+    </section>
+
+    <script>
+        document.getElementById('second-item').addEventListener('click', function(event){
+            console.log("second item clicked");
+            event.stopImmediatePropagation();
+        })
+
+
+          document.getElementById('list-container').addEventListener('click', function () {
+                console.log(" all clicked");
+            })
+    </script>
+</body>
+</html>

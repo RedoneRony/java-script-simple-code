@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="div-p">
+        <p>lorem20</p>
+        <p>lorem20</p>
+    </div>
+    <textarea name="" id="new-comment" rows="4" cols="60"></textarea>
+    <br>
+    <button id="submit-comment"></button>
+
+    <script>
+        document.getElementById('submit-comment').addEventListener('click', function(){
+
+        // get user comment
+         const comment = document.getElementById('new-comment');
+        //  const userComment = comment.value;
+
+        // create comment paragraph 
+         const p = document.createElement('p');
+         p.innerText = comment.value;
+         
+        //   append the comment 
+         const commentContainer = document.getElementById('div-p');
+
+     
+        commentContainer.appendChild(p);
+
+        // clean comment in comment box
+        comment.value = '';
+
+
+
+        })
+    </script>
+</body>
+</html>
+
